@@ -12,14 +12,14 @@ function App() {
     evt.preventDefault();
 
     var myHeaders = new Headers();
-    myHeaders.append("Authorization", "Basic <MDZmZGU3YzYtYzE4OC00NDNkLWJlNmQtNDdiMWU2ZmM2ZTg0>");
+    myHeaders.append("Authorization", "Basic <XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX>");
     myHeaders.append("Content-Type", "application/json");
     myHeaders.append("Cookie", "__cfduid=da8d1828aa2730b71a3e08a13477b0de61614879136");
 
     var raw = JSON.stringify(
       {
         "included_segments": ["Subscribed Users"],
-        "app_id": "863c38f5-88ae-4b1d-9bdf-9374a00cd374",
+        "app_id": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
         "contents": { "en": `${title}` },
         "headings": { "en": ` ${message}` },
         "data": { "custom_data": "some value" },
@@ -27,7 +27,7 @@ function App() {
         "chrome_web_image": "https://perfildesign.com.br/storage/2018/10/Perfil-Design_Digital_Website_Thumbnail_Oston.jpg"
 
       });
-
+    
     var requestOptions = {
       method: 'POST',
       headers: myHeaders,
